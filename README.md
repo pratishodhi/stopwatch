@@ -8,6 +8,7 @@ A simple stopwatch which measure to milliseconds.
 
 
 
+![Screenshot_1631854477](https://user-images.githubusercontent.com/87486230/133726742-6678714a-bc0a-462e-a06b-9fb7f44e0d01.png)
 
 ## Getting Started
 
