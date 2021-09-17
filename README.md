@@ -1,6 +1,13 @@
-# portfolio
+#STOPWATCH
 
-A new Flutter project.
+A simple stopwatch which measure to milliseconds.
+
+
+
+![Screenshot_1631854399](https://user-images.githubusercontent.com/87486230/133726656-3ca14706-dfc7-4d0b-8652-3c234e1090bc.png)
+
+
+
 
 ## Getting Started
 
