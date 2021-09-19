@@ -69,6 +69,7 @@ class _MyAppState extends State<MyApp> {
     });
     swatch.reset();
     initialTime = "00:00:00";
+    milliseconds = "00";
   }
 
   @override
