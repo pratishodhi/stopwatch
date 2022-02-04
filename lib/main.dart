@@ -81,29 +81,36 @@ class _MyAppState extends State<MyApp> {
           children: [
             Expanded(
                 flex: 1,
-                child: Center(
+                child: FittedBox(
+                  child: Center(
+                      child: Padding(
+                    padding: const EdgeInsets.all(18.0),
                     child: Text(
-                  initialTime,
-                  style: const TextStyle(
-                      fontSize: 50, fontWeight: FontWeight.bold),
-                ))),
+                      initialTime,
+                      style: const TextStyle(
+                          fontSize: 50, fontWeight: FontWeight.bold),
+                    ),
+                  )),
+                )),
             Expanded(
                 flex: 1,
-                child: Center(
-                    child: Text(
-                  milliseconds,
-                  style: const TextStyle(
-                      color: Colors.grey,
-                      fontSize: 152,
-                      fontWeight: FontWeight.bold),
-                ))),
+                child: FittedBox(
+                  child: Center(
+                      child: Text(
+                    milliseconds,
+                    style: const TextStyle(
+                        color: Colors.grey,
+                        fontSize: 152,
+                        fontWeight: FontWeight.bold),
+                  )),
+                )),
             Expanded(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   ElevatedButton(
                     onPressed: stopIsPressed ? null : stopwatchStop,
-                    child: const Text("Stop"),
+                    child: const FittedBox(child: Text("Stop")),
                     style: ButtonStyle(
                         minimumSize:
                             MaterialStateProperty.all(const Size(100, 50)),
@@ -112,7 +119,7 @@ class _MyAppState extends State<MyApp> {
                   ),
                   ElevatedButton(
                     onPressed: resetIsPressed ? null : stopwatchReset,
-                    child: const Text("Reset"),
+                    child: const FittedBox(child: Text("Reset")),
                     style: ButtonStyle(
                         minimumSize:
                             MaterialStateProperty.all(const Size(100, 50)),
@@ -124,7 +131,7 @@ class _MyAppState extends State<MyApp> {
             ),
             ElevatedButton(
               onPressed: startIsPressed ? stopwatchStart : null,
-              child: const Text("Start"),
+              child: const FittedBox(child: Text("Start")),
               style: ButtonStyle(
                   minimumSize: MaterialStateProperty.all(const Size(200, 50)),
                   backgroundColor:
